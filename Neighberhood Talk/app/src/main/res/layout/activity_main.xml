@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.449"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.022" -->
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/total_questions"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/choices_layout"
+        android:id="@+id/question"
+        android:textStyle="bold"
+        android:text="@string/this_will_be_the_quetion"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="239dp"
+        android:textAlignment="center"
+        android:margin="20dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="310dp">
+
+
+        <Button
+            android:id="@+id/ans_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/ans_a"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="329dp">
+        </Button>
+
+        <Button
+            android:id="@+id/ans_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/ans_b"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="-12dp"
+            tools:layout_editor_absoluteY="391dp">
+
+        </Button>
+
+
+        <Button
+            android:id="@+id/ans_C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/ans_c"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="526dp">
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choices_layout"
+        android:text="@string/submit"
+        android:layout_marginTop="40dp"
+        
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="534dp"
+        tools:ignore="HardcodedText">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
